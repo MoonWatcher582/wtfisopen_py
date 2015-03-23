@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" href="static/style.css" />
+	</head>
+	<body>
+		<!--	<p> {{ url }} </p> -->
+
+		<!-- <p> {{ lat }}, {{ _long }} </p><br /> -->
+		<div class="flexcontainer">		
+			<div class="flexchild">
+				<h1 id="fuck"> Here's what the fuck is open: </h1>
+			</div>
+			<div class="flexchild">
+				{% for r in places %}
+					<h2> {{ r.name }} </h2>
+					<p> {{ r.vicinity }} </p>
+				{% endfor %}	
+			</div>
+		</div>
+	</body>
+</html>
+
